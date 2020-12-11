@@ -43,3 +43,38 @@
         flex-direction: column;
     }
 }
+
+.search-results {
+    background-color: #fff;
+    min-height: 2em;
+    width: 67%;
+    top: -20px;
+    position: relative;
+    ul {
+        display: block;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        list-style-type: none;
+        li {
+            padding: 10px 20px;
+            &.result {
+                display: block;
+                a {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    color: #000;
+                    text-decoration: none;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: #8f57fd;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
